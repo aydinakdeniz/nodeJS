@@ -16,15 +16,25 @@ router.get("/",(req, res) => {
 
 let nextId=4;
 
-router.post("/", (req, res)=>{
+router.post("/", (req, res, next)=>{
 
     let yeniAktor=req.body;
     
+    if (yeniAktor.isim) {
+        yeniAktor.id = nextId;
+        nextId++;
+        data.push(yeniAktor);
+        res.status(201).json(yeniAktor);
+    } else {
+            next({
 
-    yeniAktor.id = nextId;
-    nextId++;
-    data.push(yeniAktor);
-    res.status(201).json(yeniAktor);
+                statusCode: 400,
+                errorMessage: "Aktör ismi girmelisiniz."
+            
+            }) ;
+    }
+    
+
 });
 
 router.delete("/:id", (req, res) => {

@@ -28,3 +28,5 @@ REST API isteği ve yanıt ayrıntıları, API geliştiricilerinin API'yi nasıl
 4. Belirli adres tekrarlarında Router yönlendirmesi yapılmıştır. Düzenli kod yapısı sağlanmıştır. (server.use("/aktorler",aktorlerRouter)
 
 5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Postman uygulamasıyla kontrol edilmektedir.
+
+6. errorHandling ve Log yapı örnekleri eklendi. Örneğin Aktör ekleme aşamasında isim kontrolü yapıldı ve isim yok ise hata fırlatıldı.
