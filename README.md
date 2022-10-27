@@ -29,4 +29,4 @@ REST API isteği ve yanıt ayrıntıları, API geliştiricilerinin API'yi nasıl
 
 5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Postman uygulamasıyla kontrol edilmektedir.
 
-6. errorHandling ve Log yapı örnekleri eklendi. Örneğin Aktör ekleme aşamasında isim kontrolü yapıldı ve isim yok ise hata fırlatıldı.
+6. errorHandling ve Log yapı örnekleri eklenmiştir. Örneğin Aktör ekleme aşamasında isim kontrolü yapılıp  isim yok ise hata fırlatılmıştır.
