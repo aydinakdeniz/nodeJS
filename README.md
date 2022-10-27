@@ -19,8 +19,12 @@ REST API isteği ve yanıt ayrıntıları, API geliştiricilerinin API'yi nasıl
 
 # Hakkında
 
-Node.js Express özelliği sayesinde localhost sunucu kurulumu yapılmıştır.
+1. Node.js Express özelliği sayesinde localhost sunucu kurulumu yapılmıştır.
 
-data.js dosyasında json formatında bilgi tutulmuştur.
+2. Nodemon özelliği kullanılmıştır. ("server":"nodemon index.js")
 
-index.js dosyasında req,res yapıları sayesinde aktor/:id arama özelliği sağlanmıştır.
+3. data.js dosyasında bilgi tutulmuştur.
+
+4. Belirli adres tekrarlarında Router yönlendirmesi yapılmıştır. Düzenli kod yapısı sağlanmıştır. (server.use("/aktorler",aktorlerRouter)
+
+5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Postman uygulamasıyla kontrol edilebilir.
