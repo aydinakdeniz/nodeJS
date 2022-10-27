@@ -23,8 +23,8 @@ REST API isteği ve yanıt ayrıntıları, API geliştiricilerinin API'yi nasıl
 
 2. Nodemon özelliği kullanılmıştır. ("server":"nodemon index.js")
 
-3. data.js dosyasında bilgi tutulmuştur.
+3. "data.js" dosyasında bilgi tutulmuştur.
 
 4. Belirli adres tekrarlarında Router yönlendirmesi yapılmıştır. Düzenli kod yapısı sağlanmıştır. (server.use("/aktorler",aktorlerRouter)
 
-5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Postman uygulamasıyla kontrol edilebilir.
+5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Postman uygulamasıyla kontrol edilmektedir.
