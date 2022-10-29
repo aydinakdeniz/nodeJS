@@ -1,6 +1,5 @@
 # RESTful API
 
-
 # RESTful API'ler nasıl çalışır?
 
 Bir RESTful API'nin temel işlevi, internette gezinmeyle aynıdır. İstemci, bir kaynağa ihtiyaç duyduğunda API'yi kullanarak sunucu ile iletişime geçer. API geliştiricileri, istemcinin REST API'yi nasıl kullanması gerektiğini sunucu uygulamasının API belgelerinde açıklar. Herhangi bir REST API çağrısına yönelik genel adımlar şunlardır:
@@ -15,18 +14,18 @@ Bir RESTful API'nin temel işlevi, internette gezinmeyle aynıdır. İstemci, bi
 
 REST API isteği ve yanıt ayrıntıları, API geliştiricilerinin API'yi nasıl tasarladığına bağlı olarak küçük farklılıklar gösterir.
 
-
-
 # Hakkında
 
 1. Node.js Express özelliği sayesinde localhost sunucu kurulumu yapılmıştır.
 
 2. Nodemon özelliği kullanılmıştır. ("server":"nodemon index.js")
 
-3. "data.js" dosyasında bilgi tutulmuştur.
+3. Belirli adres tekrarlarında Router yönlendirmesi yapılmıştır. Düzenli kod yapısı sağlanmıştır. (server.use("/aktorler",aktorlerRouter)
 
-4. Belirli adres tekrarlarında Router yönlendirmesi yapılmıştır. Düzenli kod yapısı sağlanmıştır. (server.use("/aktorler",aktorlerRouter)
+4. Knex ve PostgreSQL yapısı ile veritabanı hazırlanmıştır. Seed özelliği sayesinde development aşamasında default bilgiler getirilmiştir.
 
-5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Postman uygulamasıyla kontrol edilmektedir.
+5. Aktör ekleme, silme, güncelleme özellikleri eklenmiştir. Bilgiler database üzerindedir ve Postman uygulamasıyla kontrol edilmektedir.
 
-6. errorHandling ve Log yapı örnekleri eklenmiştir. Örneğin Aktör ekleme aşamasında isim kontrolü yapılıp  isim yok ise hata fırlatılmıştır.
+6. errorHandling ve Log yapı örnekleri eklenmiştir. Örneğin; aktör ekleme aşamasında isim kontrolü yapılıp isim yok ise hata fırlatılmıştır.
+
+7. Knex ve PostgreSQL yapısı ile veritabanı hazırlanmıştır. Seed özelliği sayesinde development aşamasında default bilgiler getirilmiştir.
